@@ -1,0 +1,19 @@
+{
+  "name": "social-media-triage-kit",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A generic local-first social media triage kit for Codex, Claude Code, Notion, and authenticated social accounts.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "check": "node -e \"JSON.parse(require('fs').readFileSync('templates/starter-rules.json','utf8')); console.log('starter-rules.json valid')\""
+  },
+  "keywords": [
+    "social-media",
+    "triage",
+    "notion",
+    "codex",
+    "claude-code",
+    "automation"
+  ]
+}
