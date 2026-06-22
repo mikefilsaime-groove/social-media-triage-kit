@@ -125,6 +125,7 @@ Allowed without extra confirmation when rules clearly authorize:
 - Create Notion items
 - Ignore obvious spam
 - Route support or operations items to delegates
+- Reply with the configured feedback portal for routine bug reports or feature requests when that is the whole ask
 
 Be careful with:
 

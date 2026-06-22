@@ -54,6 +54,8 @@ Legal/Ops Lead
 
 Replace all `example.com` values with your own local delegates. Do not commit private names or contact details to GitHub.
 
+If you use a feedback portal for bug reports or feature requests, replace the placeholder feedback URL in the starter rules with your own portal.
+
 ## Step 3: Authenticate Social Accounts
 
 Authenticate each social platform in the approved browser/session layer for your agent.

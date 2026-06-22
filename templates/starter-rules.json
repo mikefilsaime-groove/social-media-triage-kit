@@ -154,6 +154,20 @@
     "Source Section": "Support"
   },
   {
+    "Category": "Bug Reports / Feature Requests - Feedback Portal",
+    "Platform": ["Messenger", "LinkedIn", "Facebook Groups"],
+    "Active": true,
+    "Social Outcome": "Reply / Qualify",
+    "Executive Visibility": "No notification",
+    "Notify Method": ["Don't Notify"],
+    "Delegate Name(s)": "",
+    "Delegate Contact(s)": "",
+    "When To Use": "Routine bug reports, improvement ideas, or feature requests where that is the whole ask.",
+    "Default Handling": "Reply with the configured feedback portal URL, explain that requests are reviewed regularly and may be handled by the team or agents, then close/archive when safe.",
+    "Examples / Notes": "Replace https://feedback.example.com with your real feedback portal. Do not use this for critical outages, access problems, broken checkout/payment flows, refund/payment issues, angry customers, legal/public threats, or customer-specific support problems.",
+    "Source Section": "Feedback"
+  },
+  {
     "Category": "Implementation Or Agency Requests",
     "Platform": ["Messenger", "LinkedIn"],
     "Active": true,
