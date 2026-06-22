@@ -123,6 +123,9 @@ Review:
 - Which items would have gone to Notion
 - Which items would have been delegated
 - Which items would have triggered urgent notifications
+- Whether each Notion decision item has a source-specific title prefix, such as `Facebook Messenger:` or `LinkedIn Message:`
+- Whether each Notion decision item body includes sender, observed timestamp, source thread link, and full relevant message/post text
+- Whether the agent fetched each created card back and verified that it was not blank
 
 ## Step 7: Enable Limited Actions
 
@@ -162,6 +165,57 @@ Notion decision item URL
 ```
 
 Keep the full sensitive context in Notion, not in the text message.
+
+## Decision Card Standard
+
+Every decision card should let the executive act without opening the social platform.
+
+Use source-specific titles:
+
+```text
+Facebook Messenger: refund request from customer [SOC-ABCDE]
+LinkedIn Message: partnership invitation from operator [SOC-FGHIJ]
+Facebook Group: pending post about support issue [SOC-KLMNO]
+```
+
+Do not use generic prefixes like `Social:` when the exact surface is known.
+
+The page body should include:
+
+- `Decision Brief`
+- `Exact Ask`
+- `Suggested Action`
+- `Context`
+- `Why It Matters`
+- `Source And Meta`
+- `Run Notes`
+
+For direct messages, include the full relevant inbound transcript with sender names, observed timestamps, and line breaks when available.
+
+For group posts or comments, include the full relevant post/comment text, author, observed timestamp, and source link when available.
+
+After creating a Notion item, fetch it back and verify that the body is not blank before the run is marked complete.
+
+## Executive Response Handling
+
+When the executive replies in Notion or changes a status, the responder should route the action back to the original source.
+
+Use:
+
+- `Source Channel`
+- `Source Thread Link`
+- `Triage ID`
+- The latest executive comment or status change
+
+Examples:
+
+```text
+Facebook Messenger item -> reply in the linked Messenger conversation.
+LinkedIn Message item -> reply in the linked LinkedIn conversation.
+Facebook Group item -> act on the linked post, comment, or moderation item.
+```
+
+Do not assume all response work belongs in email. If the source link or authentication is missing, keep the item active and add a clear blocker comment in Notion.
 
 ## Step 9: Improve Rules Over Time
 

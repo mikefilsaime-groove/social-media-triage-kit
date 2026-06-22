@@ -55,10 +55,12 @@ If no browser or API access is available, produce a review checklist instead of 
 Every Notion decision item should include:
 
 - Stable triage ID
-- Platform
-- Source link
-- Last activity date
+- Source-specific title prefix, such as `Facebook Messenger:`, `LinkedIn Message:`, `LinkedIn Connection Request:`, `Facebook Group:`, or `Facebook Friend Request:`
+- Source channel
+- Source thread link
+- Observed sent/activity date
 - Sender or actor
+- Full relevant inbound message, post, or comment text
 - Exact ask
 - Suggested action
 - Summary
@@ -66,6 +68,37 @@ Every Notion decision item should include:
 - Rule match and confidence
 
 The executive should be able to decide without opening the social platform.
+
+Do not create blank, title-only, or property-only Notion cards.
+
+Every decision item page body should include these sections:
+
+- `Decision Brief`
+- `Exact Ask`
+- `Suggested Action`
+- `Context`
+- `Why It Matters`
+- `Source And Meta`
+- `Run Notes`
+
+For Messenger, LinkedIn DM, and other direct-message items, include the full relevant inbound message transcript in the page body, preserving sender names, observed timestamps, and line breaks when available.
+
+For group posts or comments, include the full relevant post/comment text, author, observed timestamp, and source link when available.
+
+After creating or updating a Notion decision item, fetch it back and verify that the page body is not blank and includes the sender, timestamp, source, and message/post text.
+
+## Executive Response Handling
+
+When the executive replies in Notion comments or changes a decision item status, route the follow-up back to the original source using the item's `Source Channel` and `Source Thread Link`.
+
+Examples:
+
+- Facebook Messenger items go back to the linked Messenger conversation.
+- LinkedIn Message items go back to the linked LinkedIn conversation.
+- LinkedIn Connection Request items go back to the linked request.
+- Facebook Group items go back to the linked post, comment, member request, or moderation item.
+
+Do not treat the decision inbox as email-only. If the source link, authentication, or platform access is missing, keep the item active and add a clear blocker note in Notion.
 
 ## 911 Items
 

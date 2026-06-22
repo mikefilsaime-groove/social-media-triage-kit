@@ -23,8 +23,36 @@
     "Delegate Name(s)": "",
     "Delegate Contact(s)": "",
     "When To Use": "Use whenever a social item needs executive awareness, decision, response, approval, or a new rule.",
-    "Default Handling": "Create or update an item in the existing Executive Decision Inbox. Do not create a separate social inbox.",
-    "Examples / Notes": "Fill exact ask, suggested action, summary, why it matters, source link, and assistant notes.",
+    "Default Handling": "Create or update an item in the existing Executive Decision Inbox. Do not create a separate social inbox. The title must start with the exact source, such as Facebook Messenger:, LinkedIn Message:, LinkedIn Connection Request:, Facebook Group:, or Facebook Friend Request:.",
+    "Examples / Notes": "Fill exact ask, suggested action, summary, why it matters, source thread link, source channel, and assistant notes. The page body must not be blank.",
+    "Source Section": "Decision Inbox"
+  },
+  {
+    "Category": "Decision Card Content Quality",
+    "Platform": ["All Social"],
+    "Active": true,
+    "Social Outcome": "Needs Executive",
+    "Executive Visibility": "Decision queue",
+    "Notify Method": ["Notion Inbox"],
+    "Delegate Name(s)": "",
+    "Delegate Contact(s)": "",
+    "When To Use": "Use whenever creating or updating an Executive Decision Inbox item from a social source.",
+    "Default Handling": "Create a readable page body with Decision Brief, Exact Ask, Suggested Action, Context, Why It Matters, Source And Meta, and Run Notes. The Decision Brief must include sender, observed sent time, source channel, and the actual message or post text.",
+    "Examples / Notes": "For DMs, include the full relevant inbound message transcript with timestamps and sender names. For group posts/comments, include the full relevant post/comment text. Fetch the Notion page after creation and verify it is not blank.",
+    "Source Section": "Decision Inbox"
+  },
+  {
+    "Category": "Executive Response Routing",
+    "Platform": ["All Social"],
+    "Active": true,
+    "Social Outcome": "Needs Executive",
+    "Executive Visibility": "Decision queue",
+    "Notify Method": ["Notion Inbox"],
+    "Delegate Name(s)": "",
+    "Delegate Contact(s)": "",
+    "When To Use": "Use whenever the executive comments in Notion, changes a decision item status, or marks an item handled.",
+    "Default Handling": "Route the follow-up by Source Channel and Source Thread Link. Messenger items go back to Messenger, LinkedIn items go back to LinkedIn, Facebook Group items go back to the linked group item, and other sources go back to their linked source.",
+    "Examples / Notes": "Do not assume follow-up actions belong in email. If the source link or authentication is missing, keep the item active and add a blocker note.",
     "Source Section": "Decision Inbox"
   },
   {

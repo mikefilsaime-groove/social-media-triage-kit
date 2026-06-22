@@ -11,6 +11,9 @@ All names, companies, groups, contacts, and rules in this repo are fictional exa
 - A Notion **Social Triage Rules** database that acts like a live policy table.
 - A Notion **Decision Inbox** database for social items that need the executive.
 - Starter rules for DMs, connection requests, group moderation, support, partnerships, commission disputes, legal threats, angry customers, and personal reach-outs.
+- Source-specific decision cards that start with labels like `Facebook Messenger:`, `LinkedIn Message:`, or `Facebook Group:`.
+- Transcript-rich Notion cards that include sender, timestamp, source link, and the full relevant message/post text.
+- A source-aware response loop so executive comments in Notion route back to the original Messenger, LinkedIn, Facebook Group, or other social source item.
 - Portable Codex and Claude Code skill folders.
 - A white paper explaining the operating model and signal-to-noise philosophy.
 - Install documentation for both Codex and Claude Code.

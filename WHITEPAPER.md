@@ -118,15 +118,26 @@ The decision inbox also lives in Notion. It is not a second social inbox. It is 
 
 Each item should answer:
 
+- Which exact social surface produced it?
 - Which platform did it come from?
 - Who is involved?
+- When was the relevant message or post sent?
+- What is the full relevant message, post, or comment text?
 - What exactly did they ask or say?
 - Why does it matter now?
 - What is the suggested action?
 - What link opens the original profile, message, post, or group thread?
 - What should the agent do next?
 
-The executive can respond in Notion comments or change a status field such as `Ready to Act`, `Done`, or `Ignore`.
+The title should start with the exact source, such as `Facebook Messenger:`, `LinkedIn Message:`, `LinkedIn Connection Request:`, `Facebook Group:`, or `Facebook Friend Request:`. This lets the executive know where the item came from before opening it.
+
+For direct-message items, the Notion body should include the full relevant inbound transcript with sender names and observed timestamps. A summary alone is not enough because it forces the executive to trust the agent's interpretation instead of reading the actual ask.
+
+For group posts or comments, the Notion body should include the full relevant post/comment text, author, observed timestamp, and source link when available.
+
+The executive can respond in Notion comments or change a status field such as `Executive Responded`, `Ready to Act`, `Handled at Source`, `Done`, or `Snoozed`.
+
+When that happens, the responder should use the item's source channel and source link to go back to the original place. A Messenger item should be handled in Messenger. A LinkedIn item should be handled in LinkedIn. A group moderation item should be handled against the linked post, comment, or moderation queue item. The decision inbox is the command layer, not an email-only queue.
 
 ### 4. Agent Runtime
 
